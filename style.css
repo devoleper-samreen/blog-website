@@ -144,12 +144,16 @@ button{
 
 .col-3{
     flex-basis: 31%;
+
+    .box{
+        padding: 10px;
+    }
     
     div{
         background-color: antiquewhite;
         box-shadow: rgba(0,0,0,.24) 0px 3px 8px;
         border-radius: 15px;
-        padding: 10px;
+        
 
         h2, p{
             text-align: center;
@@ -170,6 +174,25 @@ button{
 
     h1, p{
         margin: 10px;
+    }
+
+    p{
+        font-size: 13px;
+        color: grey;
+    }
+}
+
+/* ---------- campus section ------- */
+
+.campus{
+    margin-top: 150px;
+    margin-bottom: 80px;
+}
+
+.col-3{
+    img{
+        width: 100%;
+        border-radius: 15px;
     }
 }
 
@@ -256,6 +279,15 @@ button{
             margin: 15px 30px;
         }
 
+    }
+
+    .col-3{
+        img{
+            width: 100%;
+            border-radius: 15px;
+            height: 450px;
+            
+        }
     }
     
 }
