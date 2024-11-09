@@ -30,6 +30,11 @@
 .container{
     max-width: 1200px;
     margin: auto;
+}
+
+/* ------ header ------- */
+
+.nav-container{
     position: relative;
     z-index: 1000;
 }
@@ -119,6 +124,55 @@ button{
 
 }
 
+/* -------- css for courses section ------ */
+.small-container{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.courses{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.col-3{
+    flex-basis: 31%;
+    
+    div{
+        background-color: antiquewhite;
+        box-shadow: rgba(0,0,0,.24) 0px 3px 8px;
+        border-radius: 15px;
+        padding: 10px;
+
+        h2, p{
+            text-align: center;
+            margin: 15px;
+        }
+    
+        p{
+            font-size: 14px;
+            color: rgba(54, 53, 53, 0.962);
+        }
+
+    }
+}
+
+.title{
+    text-align: center;
+    margin: 0px 10px 60px 10px;
+
+    h1, p{
+        margin: 10px;
+    }
+}
+
 
 
 /* ----- css for menu ------ */
@@ -193,6 +247,15 @@ button{
         font-size: 15px;
         padding: 10px 0;
         margin: 50px 0 50px 0;
+    }
+
+    .col-3{
+        flex-basis: 100%;
+
+        div{
+            margin: 15px 30px;
+        }
+
     }
     
 }
