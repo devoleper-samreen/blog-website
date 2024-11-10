@@ -341,4 +341,9 @@ button{
         }
     }
     
+    .col-2{
+        flex-basis: 80%;
+        margin-bottom: 25px;
+        margin-left: 10%;
+    }
 }
