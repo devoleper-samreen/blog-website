@@ -16,18 +16,19 @@
                 </div>
                 <nav>
                     <ul id="item">
-                        <li><a href="">HOME</a></li>
-                        <li><a href="">COURSE</a></li>
-                        <li><a href="">ABOUT</a></li>
-                        <li><a href="">BLOG</a></li>
-                        <li><a href="">CONTACT</a></li>
+                        <li><a href="#hero">HOME</a></li>
+                        <li><a href="#campus">ABOUT</a></li>
+                        <li><a href="#courses">COURSE</a></li>
+                        <li><a href="#facilities">BLOG</a></li>
+                        <li><a href="#reviews">REVIEWS</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
                     </ul>
                 </nav>
                 <div class="menu" onclick="menuToggle()">
                     <img src="images/menu.png">
                 </div>
             </div>
-            <div class="hero">
+            <div class="hero" id="hero">
                 <div class="hero-content">
                     <h1>World's Biggest University</h1>
                     <p>
@@ -39,8 +40,39 @@
         </div>
     </div>
 
+
+    <!-- ----- campus section ------- -->
+    <div class="small-container campus" id="campus">
+        <div>
+            <div class="title">
+                <h1>Our Global campus</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <div>
+                        <img src="images/london.png">
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div>
+                        <img src="images/newyork.png">
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div>
+                        <img src="images/washington.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
     <!-- ------courses section ------- -->
-     <div class="small-container courses">
+     <div class="small-container courses" id="courses">
         <div class="title">
             <h1>Courses We Offer</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>  
@@ -73,37 +105,9 @@
         </div>
      </div>
 
-    <!-- ----- campus section ------- -->
-    <div class="small-container campus">
-        <div>
-            <div class="title">
-                <h1>Our Global campus</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing.
-                </p>
-            </div>
-            <div class="row">
-                <div class="col-3">
-                    <div>
-                        <img src="images/london.png">
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div>
-                        <img src="images/newyork.png">
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div>
-                        <img src="images/washington.png">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- ------- facilities ------- -->
-     <div class="small-container facilities">
+     <div class="small-container facilities" id="facilities">
         <div class="title">
             <h1>Our Facilities</h1>
             <p>
@@ -142,7 +146,7 @@
      </div>
 
      <!-- ------ student says -------- -->
-      <div class="small-container students">
+      <div class="small-container students" id="reviews">
         <div class="title">
             <h1>What Our Students Says</h1>
             <p>
@@ -191,27 +195,6 @@
         </div>
       </div>
 
-
-
-    <script>
-        
-        let item = document.getElementById("item");
-
-        item.style.maxHeight = "0px";
-
-     function menuToggle(){
-
-        if(item.style.maxHeight == "0px")
-        {
-            item.style.maxHeight = "250px";
-        }
-        else{
-
-            item.style.maxHeight = "0px";
-        }
-     }
-
-    </script>
-    
+    <script src="script.js"></script>
 </body>
 </html>
